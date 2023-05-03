@@ -2,6 +2,20 @@
 
 This is a sample project that uses the NeoModel library to interact with a Neo4j graph database.
 
+## How to run
+Before you proceed to running the project, you need to have a local Neo4j database running, with the expected data. For this, you can use the provided database dump and Dockerfile, or spin up your own local installation. Please proceed to the next section to understand how to use the Dockerfile.
+
+**Note** : The dump targets Neo4j version 5.7.0 (latest as of May 2023).
+
+Once you have a running database, you can run the following commands :
+
+```bash
+pipenv install
+pipenv run dev
+```
+
+This project relies on [FastAPI](https://fastapi.tiangolo.com/) and will start an API listening on http://localhost:8000
+
 ## Local database
 ### Installation
 
